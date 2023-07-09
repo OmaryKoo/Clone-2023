@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "screens/login.css";
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 .welcome-header {
@@ -38,6 +42,7 @@ body {
   transition: border-color 0.3 ease-in-out;
 }
 
+/*.login-form__input{}*/
 #log-in-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3 ease-in-out;
@@ -51,6 +56,7 @@ body {
   border-color: var(--yellow);
 }
 
+/*login-form__btn{}*/
 #login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
@@ -58,6 +64,7 @@ body {
   border-radius: 5px;
 }
 
+/*.longin-form_a{}*/
 #login-form a {
   text-align: center;
   text-decoration: none;
